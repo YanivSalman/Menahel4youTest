@@ -1,0 +1,336 @@
+
+/* Define variables*/
+:root{
+    --color-lightblue:#6379da;
+    --color-blue:rgba(16, 53, 219, 0.925);
+    --color-grey: rgb(24, 49, 58);
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-sizeP: 0.9rem;
+    --font-sizeH4: 28px;
+    --font-size-slider:45px;
+    --font-size-slider-small:45px;
+    --font-size-header:32px;
+}
+body{
+    background: white;
+    margin: 9px;
+}
+/* Define Header*/
+header>div{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-lightblue);
+    font-size: var(--font-size-header);
+    font-family: var(--font-family);
+}
+.small{
+ margin-right: 70px;
+ margin-top:5px;
+ margin-bottom:5px;
+ box-sizing: border-box;
+ cursor: pointer;
+}
+.big{
+    margin-right: 15px;
+    letter-spacing: 2px;
+    margin-top:5px;
+    cursor: pointer;
+}
+/* Define Slider*/
+  ::selection {
+    background: transparent;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: #333;
+    height: 94vh;
+    position: relative;
+    font-family: var(--font-family);
+  }
+  .containerSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46vh;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  .slider-wrapper {
+    width: 100%;
+    height: 44vh;
+    overflow: hidden;
+  }
+  .in-wrapper {
+    width: 500%;
+    height: 100%;
+    position: relative;
+    left: -100%;
+  }
+  .slide {
+    width: calc(100% / 5);
+    height: 100%;
+    float: left;
+    font-size:var(--font-size-slider);
+    color:white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid white;
+    position: absolute;
+    cursor: pointer;
+  }
+  .prev {
+    border-left: 4px solid white;
+    left: 2%;
+    transform: rotate(-45deg);
+  }
+  .next {
+    border-right: 4px solid white;
+    right: 2%;
+    transform: rotate(45deg);
+  }
+  /* End of CSS Slider */
+
+  /* Section 1 */
+.sectionOne{
+    display: flex;
+    color:white;
+    font-size: 14px;
+  
+}
+.sectionOnebox{
+    background:var(--color-blue);
+    margin-bottom:4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 0px;
+    min-height: 190px;
+    max-width: 25%;
+}
+.sectionOnebox>p{
+    direction: rtl;
+    padding: 4px;
+}
+h4{
+     font-size: var(--font-sizeH4);
+     direction: rtl;
+     padding: 10px;
+     letter-spacing: 1px;
+}
+  /* Section 2 */
+.sectionTwo{
+ display: flex;
+ color:white;
+ font-size:14px;
+ margin-top: 4PX;
+}
+.sectionTwoOne{
+    background: var(--color-lightblue);
+    margin-bottom:4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    height: 30vh;
+    direction: rtl;
+    padding: 4px;
+    width:255%;
+    height: 30vh;
+}
+.sectionTwoTwo{
+    background: var(--color-grey);
+    direction: rtl;
+    margin:0px;
+    height: 30vh;
+}
+.sectionTwoOne>p{
+    direction: rtl;
+    padding: 4px;
+}
+.sectionTwoTwo>p{
+    direction: rtl;
+    padding: 4px;
+}
+/* media Q stuff **************/
+@media screen and (max-width: 1380px) {
+    .sectionOnebox{
+        height: 88vh;
+
+   }
+   .sectionOnebox>p{
+  text-align: center;
+    
+}
+    }
+  @media screen and (max-width: 1200px) {
+    .header>div{
+        font-size: 24px;
+    }
+    #media1{
+     display:inline-block;
+     width:397%;
+     box-sizing: border-box;
+     margin-bottom: 0;
+     height: 20vh;
+        }
+        .sectionOnebox{
+             height: 40vh;
+        }
+
+        .sectionTwoOne{
+            display:inline-block;
+            width:100vh;
+            box-sizing: border-box;
+            margin-top: 80px;
+               }
+               .sectionTwoTwo{
+                display:inline-block;
+                width:100vh;
+                box-sizing: border-box;
+                margin-top: 80px;
+                   }
+
+                   .sectionTwo{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .sectionTwo>.sectionTwoOne{
+                    height: 50vh;
+                    margin-top: 95px;
+                    width: 100%;
+                    margin-right: 0px;
+                }
+                .sectionTwo>.sectionTwoTwo{
+                  height: 32vh;
+                  margin-top: 5px;
+                  margin-right: 0px;
+                  width: 100%;
+              }
+                   
+                   
+  @media screen and (max-width: 420px) {
+      .slide{
+        font-size: 25px;
+      }
+      .sectionOnebox{
+        height: 80vh;
+   }
+      .button {
+        width: 10px;
+        height: 10px;
+        border-top: 4px solid white;
+        position: absolute;
+        cursor: pointer;
+      }
+      .header>div{
+        font-size: 17px;
+    }
+    #media1{
+        display:inline-block;
+        width:397%;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        height: 20vh;
+           }
+           .sectionOnebox{
+                height: 10vh;
+           }
+           .sectionTwoOne{
+               display:inline-block;
+               width:100vh;
+               box-sizing: border-box;
+               margin-top: 80px;
+                  }
+                  .sectionTwoTwo{
+                   display:inline-block;
+                   width:100vh;
+                   box-sizing: border-box;
+                   margin-top: 80px;
+                      }
+  }
+  @media screen and (max-width: 460px) {
+    .header>div{
+        font-size: 13px;
+        margin:4px;
+    } 
+    .sectionOnebox{
+        height: 95vh;
+        margin-top: 12px;
+        text-overflow: clip;
+   }
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .containerSlider{
+        margin:0;
+    }
+    #media1{
+        display:inline-block;
+        width:397%;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        height: 20vh;
+           }
+           .sectionOnebox{
+                height: 10vh;
+           }
+           .sectionTwo>div{
+            display:inline-block;
+            width:397%;
+            box-sizing: border-box;
+            margin-bottom: 0;
+            height: 20vh;
+           }
+                  div{
+                      width: 100%;
+                  }
+                  .sectionTwo{
+                      display: flex;
+                      flex-wrap: wrap;
+                  }
+                  .sectionTwo>.sectionTwoOne{
+                      height:59vh;
+                      margin-top: 64px;
+                      width: 100%;
+                      margin-right: 0px;
+                  }
+                  .sectionTwo>.sectionTwoTwo{
+                    height: 32vh;
+                    margin-top: 5px;
+                    margin-right: 0px;
+                }
+                @media screen and (max-width: 480px) {
+                    .sectionTwo>.sectionTwoOne{
+                        margin-top: 77px;
+                    }
+                    .sectionOnebox{
+                        height: 500px;
+                    }
+                    .sectionTwoOne{
+                        height: 900px;
+                       }
+                }
+                @media screen and (max-width: 420px) {
+                    .sectionTwo>.sectionTwoOne{
+                        margin-top: 80px;
+                     
+                    }
+                    .sectionTwoOne{
+                       height: 2200px;
+                       padding: 10px;
+                      }
+                    .sectionOnebox{
+                       height:500px;
+                   }
+                }                      
+  }}
